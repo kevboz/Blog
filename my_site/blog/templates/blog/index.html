@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+My Blog
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}" />
+{% endblock %}
+
+
+{% block content %}
+
+<header id = "main-navigation">
+    <h1>
+        <a href="">Kevin's Blog</a>
+    </h1>
+    <nav>
+        <a href="">App Posts</a>
+    </nav>
+</header>
+
+<section id="welcome">
+    <header>
+        <img src="" alt="Kevin. The Author of this Blog">
+    </header>
+    <p>
+        Welcome to my blog. I am Kevin, the author of this blog. I am a software developer and I love to write about my experiences in the tech world. I hope you find my posts interesting and helpful.
+    </p>
+</section>
+
+<section id="latest-posts">
+    <h2>Latest Thoughts</h2>
+    <header>
+        <h2>Latest Posts</h2>
+    </header>
+    <ul>
+        
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="" alt="Mountains">
+                        <div class="post__content">
+                            <h3> Mountain Hiking</h3>
+                            <p> There's nothing like the views while you are hiking in the Mountains</p>
+                        </div>    
+                    </a>
+                </article>
+            </li>
+    </ul>
+
+    <section id="About us">
+        <h2>What I do</h2>
+        
+        <p>
+         I am a software developer and I love to write about my experiences in the tech world. I hope you find my posts interesting and helpful.
+        </p>
+    </section>
+{% endblock %}
