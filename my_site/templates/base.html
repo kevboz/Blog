@@ -13,9 +13,18 @@
 
 </head>
 <body>
+
+    <header id = "main-navigation">
+        <h1>
+            <a href="{% url "starting-page" %}">Kevin's Blog</a>
+        </h1>
+        <nav>
+            <a href="{% url "posts_page" %}">App Posts</a>
+        </nav>
+    </header>
     
-        {% block content %}
-        {% endblock %}
+{% block content %}
+{% endblock %}
         
     
 </body>
