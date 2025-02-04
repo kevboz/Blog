@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "./.venv/scripts/python.exe", // path to your virtual environment's python
+            "program": "${workspaceFolder}/my_site/manage.py",
+            "args": [
+                "runserver",
+                "8000", // or any other port you wish to use
+            ],
+            "env": {
+                "PYTHONUNBUFFERED": "1",
+                "TEST_ENV": "This is test ENV."
+            },
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
