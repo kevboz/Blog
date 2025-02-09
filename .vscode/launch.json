@@ -10,7 +10,7 @@
             "type": "debugpy",
             "request": "launch",
             "python": "./.venv/scripts/python.exe", // path to your virtual environment's python
-            "program": "${workspaceFolder}/my_site/manage.py",
+            "program": "./my_site/manage.py",
             "args": [
                 "runserver",
                 "8000", // or any other port you wish to use
